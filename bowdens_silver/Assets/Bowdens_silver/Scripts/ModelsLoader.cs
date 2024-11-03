@@ -10,7 +10,6 @@ using UnityEngine.UI;
 
 public class ModelsLoader : MonoBehaviour
 {
-    // Define Addressable references for pre-mining models
     [SerializeField] private List<AssetReference> preMiningModelReferences;
     [SerializeField] private List<AssetReference> miningModelReferences;
 
@@ -53,7 +52,7 @@ public class ModelsLoader : MonoBehaviour
 
     private IEnumerator ScaleModel(GameObject model, float duration)
     {
-        Vector3 initialScale = Vector3.zero;
+        Vector3 initialScale = new Vector3(0.3f,1.0f,0.3f);
         Vector3 targetScale = Vector3.one; 
         float elapsedTime = 0f;
 
@@ -79,7 +78,7 @@ public class ModelsLoader : MonoBehaviour
                 if (handle.Status == AsyncOperationStatus.Succeeded)
                 {
                     var model = Instantiate(handle.Result, Vector3.zero, Quaternion.identity);
-                    Debug.Log("Model loaded: " + model);
+                    Debug.Log("Model height: " + model.transform.position.y);
                     if(show)
                     {
                         model.SetActive(true);
@@ -118,7 +117,6 @@ public class ModelsLoader : MonoBehaviour
 
     private void OnDestroy()
     {
-        // Release addressables to clean up memory when the script is destroyed
         ReleaseModels(preMiningModelReferences, preMiningModels);
         ReleaseModels(miningModelReferences, miningModels);
     }

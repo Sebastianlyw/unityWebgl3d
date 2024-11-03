@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fccf171043152954c80cd569c77be847, type: 3}
+  m_Name: OrbitCameraConfig
+  m_EditorClassIdentifier: 
+  panSpeed: 50
+  distance: 4500
+  xSpeed: 120
+  ySpeed: 120
+  zoomSpeed: 50
+  minZoom: 5
+  maxZoom: 5000
+  minYAngle: 10
+  maxYAngle: 90

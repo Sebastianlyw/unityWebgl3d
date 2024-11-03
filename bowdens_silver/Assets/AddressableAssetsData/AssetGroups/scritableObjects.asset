@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: scritableObjects
+  m_EditorClassIdentifier: 
+  m_GroupName: scritableObjects
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1cdfe8e937157b948b4ef510cde95bf1
+  m_SerializeEntries:
+  - m_GUID: 438f393c6e7caea4a9665603e64268fc
+    m_Address: Assets/Bowdens_silver/OrbitCameraConfig.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: aeee34f99ffd93f48b2189e15f82d5a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0273925e29a6d3e4ab828abf290fde78, type: 2}
+    - {fileID: 11400000, guid: 4a79cacbce699e148bf5667f2710a201, type: 2}

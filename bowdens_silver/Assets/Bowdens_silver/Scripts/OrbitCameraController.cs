@@ -1,31 +1,36 @@
-using System;
 using UnityEngine;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class OrbitalCameraController : MonoBehaviour
 {
     public Transform cameraPivot;
-    public float panSpeed = 50f;
-    public float distance = 100.0f; 
-    public float xSpeed = 120.0f; 
-    public float ySpeed = 120.0f;
-    public float zoomSpeed = 50.0f;
-    public float minZoom = 5.0f;
-    public float maxZoom = 5000.0f;
+    public OrbitCameraConfig config;
     private float x = 0.0f;
     private float y = 0.0f;
 
     private Camera cam;
-    
-    private Vector3 lastMousePosition;
-
 
     void Start()
     {
         cam = Camera.main;
-        distance = Vector3.Distance(cam.transform.position, cameraPivot.position);
+        config.distance = Vector3.Distance(cam.transform.position, cameraPivot.position);
         Vector3 angles = cam.transform.eulerAngles;
         x = angles.y;
         y = angles.x;
+    }
+
+
+    private void OnConfigLoaded(AsyncOperationHandle<OrbitCameraConfig> handle)
+    {
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            config = handle.Result;
+            
+        }
+        else
+        {
+            Debug.LogError("Failed to load OrbitCameraConfig");
+        }
     }
 
     void LateUpdate()
@@ -43,23 +48,23 @@ public class OrbitalCameraController : MonoBehaviour
 
         if (Input.GetMouseButton(0)) // Left Click + Drag for rotation
         {
+            x += Input.GetAxis("Mouse X") * config.xSpeed * 0.02f;
+            y -= Input.GetAxis("Mouse Y") * config.ySpeed * 0.02f;
 
-            x += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
-            y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
-            // Clamp the y angle to be between 10 and 90 degrees
-            y = Mathf.Clamp(y, 10.0f, 90.0f);
+            // Clamp the y angle to be between minYAngle and maxYAngle
+            y = Mathf.Clamp(y, config.minYAngle, config.maxYAngle);
         }
 
         Quaternion rotation = Quaternion.Euler(y, x, 0);
-        Vector3 position = rotation * new Vector3(0.0f, 0.0f, -distance) + cameraPivot.position;
+        Vector3 position = rotation * new Vector3(0.0f, 0.0f, -config.distance) + cameraPivot.position;
 
         cam.transform.rotation = rotation;
         cam.transform.position = position;
 
         if (Input.GetMouseButton(1)) // Right Click + Drag for panning
         {
-            float panX = Input.GetAxis("Mouse X") * -panSpeed;
-            float panY = Input.GetAxis("Mouse Y") * -panSpeed;
+            float panX = Input.GetAxis("Mouse X") * -config.panSpeed;
+            float panY = Input.GetAxis("Mouse Y") * -config.panSpeed;
 
             Vector3 panDirection = cam.transform.right * panX + cam.transform.up * panY;
             cameraPivot.position += panDirection;
@@ -69,13 +74,13 @@ public class OrbitalCameraController : MonoBehaviour
     private void HandleZoom()
     {
         float scroll = Input.GetAxis("Mouse ScrollWheel");
-        distance -= scroll * zoomSpeed;
+        config.distance -= scroll * config.zoomSpeed;
 
         // Clamp zoom distance
-        distance = Mathf.Clamp(distance, minZoom, maxZoom);
+        config.distance = Mathf.Clamp(config.distance, config.minZoom, config.maxZoom);
 
         // Update camera position based on distance
         Vector3 direction = cam.transform.position - cameraPivot.position;
-        cam.transform.position = cameraPivot.position + direction.normalized * distance;
+        cam.transform.position = cameraPivot.position + direction.normalized * config.distance;
     }
 }

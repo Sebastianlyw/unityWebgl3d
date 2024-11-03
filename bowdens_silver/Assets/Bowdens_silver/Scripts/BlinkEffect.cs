@@ -25,11 +25,9 @@ public class BlinkEffect : MonoBehaviour
     {
         while (true)
         {
-            // Step 1: Highlight color and scale up
             buttonImage.color = highlightColor;
             yield return StartCoroutine(ScaleTo(originalScale * scaleAmount));
 
-            // Step 2: Original color and scale down
             buttonImage.color = originalColor;
             yield return StartCoroutine(ScaleTo(originalScale));
         }

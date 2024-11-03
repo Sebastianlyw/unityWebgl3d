@@ -6,7 +6,6 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class MenuSceneLoader : MonoBehaviour
 {
-    // Define Addressable references for pre-mining models
     [SerializeField] private AssetReference menuReference;
 
     private GameObject loadedMenu;
