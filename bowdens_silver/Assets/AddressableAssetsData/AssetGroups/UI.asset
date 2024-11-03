@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  m_GroupName: UI
+  m_Data:
+    m_SerializedData: []
+  m_GUID: dbc2a877625e1db4e922a031223ee730
+  m_SerializeEntries:
+  - m_GUID: 192f0f5b94af31b40b46f9f0b4204627
+    m_Address: Assets/Bowdens_silver/UI/background.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf54534795dec7c4997ec106ccea1fcc
+    m_Address: Assets/Fonts/Centra_No2 SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac13510086c28dc4a89ff94a8efbaa52
+    m_Address: Assets/Bowdens_silver/UI/Northpoint.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 375b5a63009f3a9488315ab9aa848b33
+    m_Address: Assets/Bowdens_silver/UI/Northpoint.svg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2f70458cf7249048a2b4e8590f35574
+    m_Address: Assets/Bowdens_silver/UI/Pin.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d693ac6e4f7c8fc4c8c82f1f59d9479d
+    m_Address: Assets/Bowdens_silver/UI/Pin.svg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a203d388642299842b4d4f69b16d9d5e
+    m_Address: Assets/Bowdens_silver/UI/truescape-logo-dark.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 774c8e92a38fb0346a7414ea39d67f66
+    m_Address: Assets/Bowdens_silver/UI/truescape-logo-light.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95a6aa09dd77b8d45ad9bb755fc7595d
+    m_Address: Assets/Bowdens_silver/UI/videoRenderTexture.renderTexture
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e40816f1f74835e4587a3046e64cbc63
+    m_Address: Assets/Bowdens_silver/UI/playButton.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: aeee34f99ffd93f48b2189e15f82d5a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fb5203c16fcbe5c44a550556a55e94e9, type: 2}
+    - {fileID: 11400000, guid: d31a6600060a55f4dba2afaa6842e9c1, type: 2}

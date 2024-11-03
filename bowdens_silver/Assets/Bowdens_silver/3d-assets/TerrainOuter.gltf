@@ -1,0 +1,153 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v4.0.8",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5125,
+      "count": 677454
+    },
+    {
+      "name": "accessorPositions",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 113157,
+      "max": [
+        49898.75,
+        1266.7510986328125,
+        49899.4609375
+      ],
+      "min": [
+        -49898.75390625,
+        150.67782592773438,
+        -49899.4765625
+      ]
+    },
+    {
+      "name": "accessorNormals",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 113157
+    },
+    {
+      "name": "accessorUVs",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 113157
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 524767
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 33071,
+      "wrapT": 33071
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/ktx2",
+      "uri": "Textures/LowResAerial.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TerrainOuter.bin",
+      "byteLength": 524767
+    }
+  ],
+  "materials": [
+    {
+      "name": "Outer",
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.450053632,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Terrain_Outer",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Terrain_Outer",
+      "extras": {
+        "mr displacement use global settings": true,
+        "mr displacement view dependent": true,
+        "mr displacement method": 6,
+        "mr displacement smoothing on": true,
+        "mr displacement edge length": 2,
+        "mr displacement max displace": 20,
+        "mr displacement parametric subdivision level": 5
+      },
+      "translation": [
+        -0.3203125,
+        0,
+        17.2617188
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression",
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression",
+    "KHR_texture_basisu"
+  ]
+}

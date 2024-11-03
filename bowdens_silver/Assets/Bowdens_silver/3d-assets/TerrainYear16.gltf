@@ -1,0 +1,153 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v4.0.8",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 367026
+    },
+    {
+      "name": "accessorPositions",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 61365,
+      "max": [
+        2421.07421875,
+        800.9774169921875,
+        2421.101318359375
+      ],
+      "min": [
+        -2421.07421875,
+        456,
+        -2421.116943359375
+      ]
+    },
+    {
+      "name": "accessorNormals",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 61365
+    },
+    {
+      "name": "accessorUVs",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 61365
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 282076
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/ktx2",
+      "uri": "Textures/Year 16.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TerrainYear16.bin",
+      "byteLength": 282076
+    }
+  ],
+  "materials": [
+    {
+      "name": "Year16",
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.450053632,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "TerrainHigh_Year16",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "TerrainHigh_Year16",
+      "extras": {
+        "mr displacement use global settings": true,
+        "mr displacement view dependent": true,
+        "mr displacement method": 6,
+        "mr displacement smoothing on": true,
+        "mr displacement edge length": 2,
+        "mr displacement max displace": 20,
+        "mr displacement parametric subdivision level": 5
+      },
+      "translation": [
+        -0.3203125,
+        0,
+        17.2617188
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression",
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression",
+    "KHR_texture_basisu"
+  ]
+}

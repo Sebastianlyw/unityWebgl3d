@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Models
+  m_EditorClassIdentifier: 
+  m_GroupName: Models
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 428ce70721a77a24caac82625cd824d9
+  m_SerializeEntries:
+  - m_GUID: 2854104e54564e14eb5f2520f0167494
+    m_Address: Assets/Bowdens_silver/3d-assets/TerrainYear16.gltf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b723087002b6744fa3ff16cf9f2a0b8
+    m_Address: Assets/Bowdens_silver/3d-assets/TerrainOuter.gltf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7d25f1da7471e844949ce793e982464
+    m_Address: Assets/Bowdens_silver/3d-assets/TerrainExisting.gltf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa615676647021b4bbdc7682950c55d8
+    m_Address: Assets/Bowdens_silver/3d-assets/MiningFacilities.gltf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: aeee34f99ffd93f48b2189e15f82d5a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 257fa53e66a5a6f4ab626a3beec7ad43, type: 2}
+    - {fileID: 11400000, guid: ddfeeaa48a283d0488d102fd3e34a351, type: 2}
