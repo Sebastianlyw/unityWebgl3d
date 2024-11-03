@@ -1,7 +1,16 @@
-# Treat all text files as text with LF endings
-* text=auto
+# Ensure all text files use LF line endings
+* text=auto eol=lf
 
-# Force .asset, .mat, and .prefab files to use binary handling (no line-ending conversion)
+# Explicitly specify LF line endings for common text-based Unity file types
+*.cs text eol=lf
+*.js text eol=lf
+*.shader text eol=lf
+*.cginc text eol=lf
+*.dwlt text eol=lf
+*.index text eol=lf
+*.settings text eol=lf
+
+# Disable line-ending conversions for Unity binary file formats
 *.asset -text
 *.mat -text
 *.prefab -text
@@ -13,8 +22,15 @@
 *.psd -text
 *.wav -text
 *.mp3 -text
+*.tga -text
+*.exr -text
+*.dds -text
+*.mp4 -text
 
-# If you're using Visual Studio, treat its files as text
-*.cs text eol=lf
-*.shader text eol=lf
-*.cginc text eol=lf
+# Optional: for Visual Studio or Rider IDE-specific files
+*.sln text eol=lf
+*.csproj text eol=lf
+*.unityproj text eol=lf
+*.user text eol=lf
+*.uxml text eol=lf
+*.uss text eol=lf
