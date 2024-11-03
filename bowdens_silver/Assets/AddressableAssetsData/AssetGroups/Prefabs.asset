@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Prefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: Prefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 4700f911e4d6df8468610ab82d0b8f3f
+  m_SerializeEntries:
+  - m_GUID: 004ff0b2a40f9434fa4991c03ee29d4c
+    m_Address: Assets/Bowdens_silver/Prefabs/WaterPlane.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ddd0ac53c3e8e54b96e9a6786ca3db1
+    m_Address: Assets/Bowdens_silver/Prefabs/MainMenu.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: aeee34f99ffd93f48b2189e15f82d5a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c9d634dbf1235c343a3eb5edeb4a6474, type: 2}
+    - {fileID: 11400000, guid: 740d8d1232e25674eaba93bbbcb7d43e, type: 2}

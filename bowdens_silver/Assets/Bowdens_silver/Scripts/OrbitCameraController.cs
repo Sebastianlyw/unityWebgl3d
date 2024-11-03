@@ -3,25 +3,32 @@ using UnityEngine;
 
 public class OrbitalCameraController : MonoBehaviour
 {
-    public Transform cameraPivot; // Assign the CameraPivot in the Inspector
-    public float rotationSpeed = 5.0f;
+    public Transform cameraPivot;
     public float panSpeed = 50f;
-    public float zoomSpeed = 500.0f;
+    public float distance = 100.0f; 
+    public float xSpeed = 120.0f; 
+    public float ySpeed = 120.0f;
+    public float zoomSpeed = 50.0f;
     public float minZoom = 5.0f;
     public float maxZoom = 5000.0f;
+    private float x = 0.0f;
+    private float y = 0.0f;
 
     private Camera cam;
-    private float distanceToPivot;
+    
     private Vector3 lastMousePosition;
+
 
     void Start()
     {
         cam = Camera.main;
-        Console.WriteLine("Camera: " + cam);
-        distanceToPivot = Vector3.Distance(cam.transform.position, cameraPivot.position);
+        distance = Vector3.Distance(cam.transform.position, cameraPivot.position);
+        Vector3 angles = cam.transform.eulerAngles;
+        x = angles.y;
+        y = angles.x;
     }
 
-    void Update()
+    void LateUpdate()
     {
         HandleMouseInput();
         HandleZoom();
@@ -29,34 +36,46 @@ public class OrbitalCameraController : MonoBehaviour
 
     private void HandleMouseInput()
     {
+        if (cameraPivot == null)
+        {
+            return;
+        }
+
         if (Input.GetMouseButton(0)) // Left Click + Drag for rotation
         {
-            float rotationX = Input.GetAxis("Mouse X") * rotationSpeed;
-            float rotationY = Input.GetAxis("Mouse Y") * rotationSpeed;
 
-            cameraPivot.Rotate(Vector3.up, rotationX, Space.World);
-            cameraPivot.Rotate(Vector3.left, rotationY);
+            x += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
+            y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
+            // Clamp the y angle to be between 10 and 90 degrees
+            y = Mathf.Clamp(y, 10.0f, 90.0f);
         }
+
+        Quaternion rotation = Quaternion.Euler(y, x, 0);
+        Vector3 position = rotation * new Vector3(0.0f, 0.0f, -distance) + cameraPivot.position;
+
+        cam.transform.rotation = rotation;
+        cam.transform.position = position;
 
         if (Input.GetMouseButton(1)) // Right Click + Drag for panning
         {
-            float panX = Input.GetAxis("Mouse X") * panSpeed;
-            float panY = Input.GetAxis("Mouse Y") * panSpeed;
+            float panX = Input.GetAxis("Mouse X") * -panSpeed;
+            float panY = Input.GetAxis("Mouse Y") * -panSpeed;
 
-            cameraPivot.position += new Vector3(panX, 0, panY);
+            Vector3 panDirection = cam.transform.right * panX + cam.transform.up * panY;
+            cameraPivot.position += panDirection;
         }
     }
 
     private void HandleZoom()
     {
         float scroll = Input.GetAxis("Mouse ScrollWheel");
-        distanceToPivot -= scroll * zoomSpeed;
+        distance -= scroll * zoomSpeed;
 
         // Clamp zoom distance
-        distanceToPivot = Mathf.Clamp(distanceToPivot, minZoom, maxZoom);
+        distance = Mathf.Clamp(distance, minZoom, maxZoom);
 
         // Update camera position based on distance
         Vector3 direction = cam.transform.position - cameraPivot.position;
-        cam.transform.position = cameraPivot.position + direction.normalized * distanceToPivot;
+        cam.transform.position = cameraPivot.position + direction.normalized * distance;
     }
 }
