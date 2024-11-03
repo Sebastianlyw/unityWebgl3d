@@ -1,0 +1,20 @@
+# Treat all text files as text with LF endings
+* text=auto
+
+# Force .asset, .mat, and .prefab files to use binary handling (no line-ending conversion)
+*.asset -text
+*.mat -text
+*.prefab -text
+*.fbx -text
+*.unity -text
+*.meta -text
+*.png -text
+*.jpg -text
+*.psd -text
+*.wav -text
+*.mp3 -text
+
+# If you're using Visual Studio, treat its files as text
+*.cs text eol=lf
+*.shader text eol=lf
+*.cginc text eol=lf

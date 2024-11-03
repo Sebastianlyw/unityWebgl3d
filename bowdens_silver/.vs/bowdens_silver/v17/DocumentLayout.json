@@ -1,37 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\",
+  "WorkspaceRootPath": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|c:\\_workspace\\truescape\\bowdens_silver\\bowdens_silver\\assets\\bowdens_silver\\scripts\\modelsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|c:\\_workspace\\truescape\\bowdens_silver\\unitywebgl3d\\bowdens_silver\\assets\\bowdens_silver\\scripts\\simplewave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|solutionrelative:assets\\bowdens_silver\\scripts\\simplewave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|c:\\_workspace\\truescape\\bowdens_silver\\unitywebgl3d\\bowdens_silver\\assets\\bowdens_silver\\scripts\\modelsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|solutionrelative:assets\\bowdens_silver\\scripts\\modelsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\assets\\bowdens_silver\\scripts\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\assets\\bowdens_silver\\scripts\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|solutionrelative:assets\\bowdens_silver\\scripts\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\assets\\bowdens_silver\\scripts\\menusceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\assets\\bowdens_silver\\scripts\\menusceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|solutionrelative:assets\\bowdens_silver\\scripts\\menusceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\assets\\bowdens_silver\\scripts\\blinkeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\assets\\bowdens_silver\\scripts\\blinkeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|solutionrelative:assets\\bowdens_silver\\scripts\\blinkeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\assets\\bowdens_silver\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\assets\\bowdens_silver\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|solutionrelative:assets\\bowdens_silver\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\assets\\bowdens_silver\\scripts\\delayvideoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\assets\\bowdens_silver\\scripts\\delayvideoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D06945C-6DD2-2D17-11D6-06170B612EF9}|Assembly-CSharp.csproj|solutionrelative:assets\\bowdens_silver\\scripts\\delayvideoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,15 +46,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "SimpleWave.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\SimpleWave.cs",
+              "RelativeDocumentMoniker": "Assets\\Bowdens_silver\\Scripts\\SimpleWave.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\SimpleWave.cs",
+              "RelativeToolTip": "Assets\\Bowdens_silver\\Scripts\\SimpleWave.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T18:02:21.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ButtonHandler.cs",
-              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\ButtonHandler.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\ButtonHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Bowdens_silver\\Scripts\\ButtonHandler.cs",
-              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\ButtonHandler.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\ButtonHandler.cs",
               "RelativeToolTip": "Assets\\Bowdens_silver\\Scripts\\ButtonHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -58,11 +75,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MenuManager.cs",
-              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\MenuManager.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\MenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Bowdens_silver\\Scripts\\MenuManager.cs",
-              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\MenuManager.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\MenuManager.cs",
               "RelativeToolTip": "Assets\\Bowdens_silver\\Scripts\\MenuManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -70,11 +87,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BuildScriptBase.cs",
-              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs",
-              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs",
               "RelativeToolTip": "Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Build\\DataBuilders\\BuildScriptBase.cs",
               "ViewState": "AgIAAFgAAAAAAAAAAAAUwGUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -83,11 +100,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AddressableAssetSettings.cs",
-              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs",
-              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs",
               "RelativeToolTip": "Library\\PackageCache\\com.unity.addressables@1.21.21\\Editor\\Settings\\AddressableAssetSettings.cs",
               "ViewState": "AgIAABcLAAAAAAAAAAAAwCILAACIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -96,11 +113,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DelayVideoPlayer.cs",
-              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\DelayVideoPlayer.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\DelayVideoPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Bowdens_silver\\Scripts\\DelayVideoPlayer.cs",
-              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\DelayVideoPlayer.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\DelayVideoPlayer.cs",
               "RelativeToolTip": "Assets\\Bowdens_silver\\Scripts\\DelayVideoPlayer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -108,11 +125,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MenuSceneLoader.cs",
-              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\MenuSceneLoader.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\MenuSceneLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Bowdens_silver\\Scripts\\MenuSceneLoader.cs",
-              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\MenuSceneLoader.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\MenuSceneLoader.cs",
               "RelativeToolTip": "Assets\\Bowdens_silver\\Scripts\\MenuSceneLoader.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -120,11 +137,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BlinkEffect.cs",
-              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\BlinkEffect.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\BlinkEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Bowdens_silver\\Scripts\\BlinkEffect.cs",
-              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\BlinkEffect.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\BlinkEffect.cs",
               "RelativeToolTip": "Assets\\Bowdens_silver\\Scripts\\BlinkEffect.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAiwA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -132,11 +149,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ModelsLoader.cs",
-              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\ModelsLoader.cs",
+              "DocumentMoniker": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\ModelsLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Bowdens_silver\\Scripts\\ModelsLoader.cs",
-              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\ModelsLoader.cs",
+              "ToolTip": "C:\\_workspace\\truescape\\Bowdens_Silver\\unityWebgl3d\\bowdens_silver\\Assets\\Bowdens_silver\\Scripts\\ModelsLoader.cs",
               "RelativeToolTip": "Assets\\Bowdens_silver\\Scripts\\ModelsLoader.cs",
               "ViewState": "AgIAABMAAAAAAAAAAADgvyEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
