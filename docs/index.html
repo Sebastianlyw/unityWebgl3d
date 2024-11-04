@@ -10,19 +10,19 @@
   </head>
   <body>
     <div id="unity-container" style="width: 100%; height: 100%">
-      <canvas id="unity-canvas" width=auto height=auto tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=auto height=auto></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <!-- <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
+      <!-- <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div> -->
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">bowdens_silver</div>
-      </div> -->
+        <!-- <div id="unity-build-title">bowdens_silver</div> -->
+      </div>
     </div>
     <script>
 
@@ -60,9 +60,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebglBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebglBuild.data.br",
-        frameworkUrl: buildUrl + "/WebglBuild.framework.js.br",
-        codeUrl: buildUrl + "/WebglBuild.wasm.br",
+        dataUrl: buildUrl + "/WebglBuild.data",
+        frameworkUrl: buildUrl + "/WebglBuild.framework.js",
+        codeUrl: buildUrl + "/WebglBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "bowdens_silver",
