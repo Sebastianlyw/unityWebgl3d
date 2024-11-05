@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "OrbitCameraConfig", menuName = "Camera/OrbitCameraConfig")]
+[CreateAssetMenu(fileName = "OrbitCameraConfig", menuName = "Config/OrbitCamera")]
 public class OrbitCameraConfig : ScriptableObject
 {
     public float panSpeed = 50f;

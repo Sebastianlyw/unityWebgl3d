@@ -16,72 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 5a072f26e8f6d124d9171d5e5855eb71
-  m_SerializeEntries:
-  - m_GUID: 0f6851abc5dc34a47b265695a616336e
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/130_metal-rufing-texture-seamless.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9df24aa159e99894f9d3fa53b23ca41b
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/130_metal-rufing-texture-seamless-green.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 59c2a7fa7a5a71d4eadb04d2895a84cf
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/185_metal-rufing-texture-seamless-2.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5cb10993a0f249d4e804008bf1cf30e2
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/Berms.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6d69495beac73ad48815bc786943b075
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/ConcreteBare0428_4_seamless_L.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b5d1aff8318ffb54198385e512b0d254
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/Existing.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dd98879ed3eb801479a4d5626ee3be7b
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/LowResAerial.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ba8e384d5c0bc06428548bd1414cd0d6
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/MetalFloorsBare0037_5_S Grey.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e0145f4a356db1a418a1d325cb0dfa4e
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/roads uv.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bd2ff7e68706a8241aec5864a2fe427f
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/Rom 02.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9a274aecec764f244b573b8e09a8d82d
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/Rom pad.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5f1fd4fa06ae99b4f8e153e7506e41d8
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/WoodFine0058_30_seamless_M.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5b9ceac054fe107498755e25e679f8ab
-    m_Address: Assets/Bowdens_silver/3d-assets/Textures/Year 16.ktx2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: aeee34f99ffd93f48b2189e15f82d5a0, type: 2}
   m_SchemaSet:

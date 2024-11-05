@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fccf171043152954c80cd569c77be847, type: 3}
   m_Name: OrbitCameraConfig
   m_EditorClassIdentifier: 
-  panSpeed: 50
-  distance: 4500
+  panSpeed: 100
+  distance: 1228.6711
   xSpeed: 120
   ySpeed: 120
-  zoomSpeed: 50
+  zoomSpeed: 500
   minZoom: 5
   maxZoom: 5000
-  minYAngle: 10
+  minYAngle: 15
   maxYAngle: 90

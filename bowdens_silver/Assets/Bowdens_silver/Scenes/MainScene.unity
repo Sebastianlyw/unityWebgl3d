@@ -202,6 +202,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &932956302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932956304}
+  - component: {fileID: 932956303}
+  m_Layer: 0
+  m_Name: TreeSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &932956303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932956302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2036b3fdcf23e408fbeef02a351ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treePrefabReferences:
+    m_AssetGUID: 2703d2cc9082ba946816893085ae571f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  preMining_config: {fileID: 11400000, guid: 4b5fd5f67ad7fa64c96956d5e411d859, type: 2}
+  mining_config: {fileID: 11400000, guid: 00aeed27eccc7064480df5c05f83398b, type: 2}
+  globalConfig: {fileID: 11400000, guid: b52c0be7b8d6f714797663150700f8be, type: 2}
+  sceneCenter: {x: 616, y: 0, z: -244}
+  terrainMesh: {fileID: 8096268668172558023, guid: 2854104e54564e14eb5f2520f0167494,
+    type: 3}
+  terrainMeshOuter: {fileID: 0}
+--- !u!4 &932956304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932956302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 143.66943, y: 37.063324, z: -6.916275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1255662170
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +283,7 @@ Transform:
   m_GameObject: {fileID: 1255662170}
   serializedVersion: 2
   m_LocalRotation: {x: 0.051020425, y: 0.35172617, z: -0.019202722, w: 0.9345143}
-  m_LocalPosition: {x: -2890, y: 0, z: -2625}
+  m_LocalPosition: {x: -850, y: 600, z: -650}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -262,13 +318,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378041027}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 0, y: 4500, z: 0}
+  m_LocalRotation: {x: -0.30242506, y: -0.21154809, z: 0.09580673, w: -0.92444986}
+  m_LocalPosition: {x: -409.37164, y: 736.82056, z: -893.94806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1255662171}
-  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.20930938, y: -0.73870814, z: 0}
 --- !u!114 &1378041029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,28 +540,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preMiningModelReferences:
-  - m_AssetGUID: 6b723087002b6744fa3ff16cf9f2a0b8
+  - m_AssetGUID: d16a963f8e757674cbe836d951de6913
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  - m_AssetGUID: b7d25f1da7471e844949ce793e982464
+  - m_AssetGUID: 880062f4d67a3d94ea7e623961d2880a
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   miningModelReferences:
-  - m_AssetGUID: 6b723087002b6744fa3ff16cf9f2a0b8
+  - m_AssetGUID: d16a963f8e757674cbe836d951de6913
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  - m_AssetGUID: 2854104e54564e14eb5f2520f0167494
+  - m_AssetGUID: f2e6b5e2fe1ad90449f0dbafa8c40fd3
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  - m_AssetGUID: fa615676647021b4bbdc7682950c55d8
+  - m_AssetGUID: 9b523e4b0e0134e4cbb5b89d83a42279
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  config: {fileID: 11400000, guid: b52c0be7b8d6f714797663150700f8be, type: 2}
   toggleButton: {fileID: 243302998}
+  treeSpawner: {fileID: 932956303}
   scaleDuration: 2.5
 --- !u!4 &1861298538
 Transform:
@@ -653,6 +711,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: SiteMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 360921893263567549, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 383294231441290730, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 383294231441290730, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 383294231441290730, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 932956303}
+    - target: {fileID: 383294231441290730, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 383294231441290730, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpawnTrees
+      objectReference: {fileID: 0}
+    - target: {fileID: 383294231441290730, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TreeSpawner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 383294231441290730, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 445722568599355011, guid: 947804dc5730ce142a584f5684bd1422,
         type: 3}
       propertyPath: m_Pivot.x
@@ -793,6 +891,11 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278196479
       objectReference: {fileID: 0}
+    - target: {fileID: 8026972408365804167, guid: 947804dc5730ce142a584f5684bd1422,
+        type: 3}
+      propertyPath: m_Name
+      value: MiningButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -808,3 +911,4 @@ SceneRoots:
   - {fileID: 4958109555263290803}
   - {fileID: 1762906681}
   - {fileID: 147729933}
+  - {fileID: 932956304}

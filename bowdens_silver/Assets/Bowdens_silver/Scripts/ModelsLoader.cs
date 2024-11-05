@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -12,41 +13,47 @@ public class ModelsLoader : MonoBehaviour
 {
     [SerializeField] private List<AssetReference> preMiningModelReferences;
     [SerializeField] private List<AssetReference> miningModelReferences;
-
+    public GlobalConfig config;
     public Button toggleButton;
+    public TreeSpawner treeSpawner;
   
     private List<GameObject> preMiningModels = new List<GameObject>();
     private List<GameObject> miningModels = new List<GameObject>();
     public float scaleDuration = 1.0f;
-
-    private bool isPreMiningActive = true;
     private TextMeshProUGUI buttonText;
-
+    private int assetsToLoad;
+    private int assetsLoaded;
     private void Start()
     {
+        assetsToLoad = preMiningModelReferences.Count + miningModelReferences.Count;
+        assetsLoaded = 0;
         LoadModels(preMiningModelReferences, preMiningModels, true);
-        LoadModels(miningModelReferences, miningModels, false);   
-     
+        LoadModels(miningModelReferences, miningModels, false);
+      
         buttonText = toggleButton.GetComponentInChildren<TextMeshProUGUI>(); 
         buttonText.text = "Mining";
         Debug.Log("buttonText: " + buttonText);
         toggleButton.onClick.AddListener(ToggleModels);
     }
 
+
     public void ToggleModels()
     {
-        if (isPreMiningActive)
+        if (config.isPreMining)
         {
             ShowModels(miningModels, preMiningModels, this.scaleDuration);
             buttonText.text = "PreMining";
+            treeSpawner.ToggleMiningTrees(false);
         }
         else
         {
             ShowModels(preMiningModels, miningModels, this.scaleDuration);
            buttonText.text = "Mining";
+            treeSpawner.TogglePreMiningTrees(false);
+
         }
 
-        isPreMiningActive = !isPreMiningActive;
+        config.isPreMining = !config.isPreMining;
     }
 
 
@@ -65,9 +72,22 @@ public class ModelsLoader : MonoBehaviour
             yield return null; 
         }
 
-        model.transform.localScale = targetScale; 
+        model.transform.localScale = targetScale;
+        ToggleTreeVisibility();
     }
+    
 
+    private void ToggleTreeVisibility()
+    {
+        if (treeSpawner != null)
+        {
+            treeSpawner.ToggleTreeVisibility();
+        }
+        else
+        {
+            Debug.LogWarning("TreeSpawner reference not set in ModelLoader.");
+        }
+    }
 
     private void LoadModels(List<AssetReference> references, List<GameObject> modelPool, bool show)
     {
@@ -92,6 +112,12 @@ public class ModelsLoader : MonoBehaviour
                 else
                 {
                     Debug.LogError("Failed to load model.");
+                }
+
+                assetsLoaded++;
+                if (assetsLoaded == assetsToLoad)
+                {
+                    treeSpawner.SpawnTrees();
                 }
             };
         }

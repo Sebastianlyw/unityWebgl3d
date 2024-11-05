@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Terrains
+  m_EditorClassIdentifier: 
+  m_GroupName: Terrains
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 428ce70721a77a24caac82625cd824d9
+  m_SerializeEntries:
+  - m_GUID: 880062f4d67a3d94ea7e623961d2880a
+    m_Address: Assets/Bowdens_silver/Prefabs/TerrainExisting.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d16a963f8e757674cbe836d951de6913
+    m_Address: Assets/Bowdens_silver/Prefabs/TerrainOuter.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2e6b5e2fe1ad90449f0dbafa8c40fd3
+    m_Address: Assets/Bowdens_silver/Prefabs/TerrainYear16.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: aeee34f99ffd93f48b2189e15f82d5a0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 257fa53e66a5a6f4ab626a3beec7ad43, type: 2}
+    - {fileID: 11400000, guid: ddfeeaa48a283d0488d102fd3e34a351, type: 2}
