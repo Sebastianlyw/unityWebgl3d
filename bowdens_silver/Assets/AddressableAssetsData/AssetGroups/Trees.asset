@@ -17,8 +17,18 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: e0c0a565a1a507a458e953ec43e6d086
   m_SerializeEntries:
-  - m_GUID: 2703d2cc9082ba946816893085ae571f
-    m_Address: Assets/Trees/Perfabs/TreeGroups.prefab
+  - m_GUID: c06c8f37cc451d546ad5cd37a31bf82e
+    m_Address: Assets/Trees/tree1.gltf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 776be619cb98d9646a27a77c2e7c8a6a
+    m_Address: Assets/Trees/tree2.gltf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14ea7071592c6f64dafbdb398cc30acd
+    m_Address: Assets/Trees/tree3.gltf
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

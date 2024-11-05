@@ -139,30 +139,30 @@ ScriptedImporter:
   _mainAssetIdentifier: scenes/Scene
   _importPlugins:
   - typeName: UnityGLTF.Plugins.LightsPunctualImport
-    overrideEnabled: 1
+    overrideEnabled: 0
     enabled: 0
     jsonSettings: 
   - typeName: UnityGLTF.Plugins.MaterialExtensionsImport
-    overrideEnabled: 1
+    overrideEnabled: 0
     enabled: 0
     jsonSettings: 
   - typeName: UnityGLTF.Plugins.DracoImport
-    overrideEnabled: 1
+    overrideEnabled: 0
     enabled: 1
     jsonSettings: 
   - typeName: UnityGLTF.Plugins.Ktx2Import
-    overrideEnabled: 1
+    overrideEnabled: 0
     enabled: 1
     jsonSettings: 
   - typeName: UnityGLTF.Plugins.GPUInstancingImport
-    overrideEnabled: 1
+    overrideEnabled: 0
     enabled: 1
     jsonSettings: 
   - typeName: UnityGLTF.Plugins.LodsImport
-    overrideEnabled: 1
+    overrideEnabled: 0
     enabled: 0
     jsonSettings: 
   - typeName: UnityGLTF.Plugins.AnimationPointerImport
-    overrideEnabled: 1
+    overrideEnabled: 0
     enabled: 0
     jsonSettings: 

@@ -17,18 +17,18 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 428ce70721a77a24caac82625cd824d9
   m_SerializeEntries:
-  - m_GUID: 880062f4d67a3d94ea7e623961d2880a
-    m_Address: Assets/Bowdens_silver/Prefabs/TerrainExisting.prefab
+  - m_GUID: 6b723087002b6744fa3ff16cf9f2a0b8
+    m_Address: Assets/Bowdens_silver/3d-assets/TerrainOuter.gltf
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d16a963f8e757674cbe836d951de6913
-    m_Address: Assets/Bowdens_silver/Prefabs/TerrainOuter.prefab
+  - m_GUID: 2854104e54564e14eb5f2520f0167494
+    m_Address: Assets/Bowdens_silver/3d-assets/TerrainYear16.gltf
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f2e6b5e2fe1ad90449f0dbafa8c40fd3
-    m_Address: Assets/Bowdens_silver/Prefabs/TerrainYear16.prefab
+  - m_GUID: b7d25f1da7471e844949ce793e982464
+    m_Address: Assets/Bowdens_silver/3d-assets/TerrainExisting.gltf
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

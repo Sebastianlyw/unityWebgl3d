@@ -43,13 +43,13 @@ public class ModelsLoader : MonoBehaviour
         {
             ShowModels(miningModels, preMiningModels, this.scaleDuration);
             buttonText.text = "PreMining";
-            treeSpawner.ToggleMiningTrees(false);
+            treeSpawner.TogglePreMiningTrees(false);
         }
         else
         {
             ShowModels(preMiningModels, miningModels, this.scaleDuration);
            buttonText.text = "Mining";
-            treeSpawner.TogglePreMiningTrees(false);
+            treeSpawner.ToggleMiningTrees(false);
 
         }
 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94123da83532c83429927fdd648f79f1, type: 3}
   m_Name: TreeConfig_Mining
   m_EditorClassIdentifier: 
-  density: 5000
+  density: 3000
   radius: 10000
   minScale: 2
   maxScale: 5

@@ -17,6 +17,11 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: dd1c68c7fb127664497fd35685c00c5c
   m_SerializeEntries:
+  - m_GUID: fa615676647021b4bbdc7682950c55d8
+    m_Address: Assets/Bowdens_silver/3d-assets/MiningFacilities.gltf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9b523e4b0e0134e4cbb5b89d83a42279
     m_Address: Assets/Bowdens_silver/Prefabs/MiningFacilities.prefab
     m_ReadOnly: 0

@@ -6,80 +6,60 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class TreeSpawner : MonoBehaviour
 {
-    [SerializeField] private AssetReference treePrefabReferences;
+    [SerializeField] private List<AssetReference> treesReferences;
     public TreeSpawnerConfig preMining_config;
     public TreeSpawnerConfig mining_config;
     public GlobalConfig globalConfig;
-    public Vector3 sceneCenter = new Vector3(-850,0,-650); 
-    public Mesh terrainMesh;
-    public Mesh terrainMeshOuter;
-    private TreeSpawnerConfig config;
+    public Vector3 sceneCenter = new Vector3(-850, 0, -650);
+ 
 
     private List<GameObject> preMiningTrees = new List<GameObject>();
     private List<GameObject> miningTrees = new List<GameObject>();
+    private List<GameObject> treePrefabs = new List<GameObject>();
+    private GameObject miningTreeParent;
+    private GameObject preMiningTreeParent;
 
-    //We should load the trees after terrain is loaded, as we need the terrin height to place the trees. 
-    // private void Start()
-    // {
-    //     SpawnTrees();
-    // }
-
-    private void OnTreePrefabLoaded(AsyncOperationHandle<GameObject> handle)
+    private void Start()
     {
-        if (handle.Status == AsyncOperationStatus.Succeeded)
+        miningTreeParent = new GameObject("MiningTrees");
+        preMiningTreeParent = new GameObject("PreMiningTrees");
+
+        miningTreeParent.transform.parent = transform;
+        preMiningTreeParent.transform.parent = transform;
+    }
+
+    private void OnTreePrefabsLoaded()
+    {
+        GameObject treeParent = new GameObject("TreesGroup");
+
+        foreach (var treePrefab in treePrefabs)
         {
-            if(globalConfig.isPreMining)
-            {
-                config = preMining_config;
-            }
-            else
-            {
-                config = mining_config;
-            }
-            PopulateTreePool(preMiningTrees, handle.Result, config);
-            PopulateTreePool(miningTrees, handle.Result, config);
-            ToggleTreeVisibility();
-           
+            treePrefab.transform.parent = treeParent.transform;
         }
-        else
-        {
-            Debug.LogError("Failed to load menu.");
-        }
+        PopulateTreePool(preMiningTrees, treeParent, preMining_config, true);
+        PopulateTreePool(miningTrees, treeParent, mining_config, false);
+
+        ToggleTreeVisibility();
     }
 
     public void TogglePreMiningTrees(bool b)
     {
-        foreach (var tree in preMiningTrees)
-        {
-            tree.SetActive(b);
-        }
+        preMiningTreeParent.SetActive(b);
     }
 
     public void ToggleMiningTrees(bool b)
     {
-        foreach (var tree in miningTrees)
-        {
-            tree.SetActive(b);
-        }
+        miningTreeParent.SetActive(b);
     }
 
     public void ToggleTreeVisibility()
     {
         bool isPreMining = globalConfig.isPreMining;
-
-        foreach (var tree in preMiningTrees)
-        {
-            tree.SetActive(isPreMining);
-        }
-
-        foreach (var tree in miningTrees)
-        {
-            tree.SetActive(!isPreMining);
-        }
+        preMiningTreeParent.SetActive(isPreMining);
+        miningTreeParent.SetActive(!isPreMining);
     }
 
-
-    private void PopulateTreePool(List<GameObject> treePool, GameObject treePrefab, TreeSpawnerConfig config)
+    private void PopulateTreePool(List<GameObject> treePool, GameObject treeParent, TreeSpawnerConfig config, bool isPreMining)
     {
         for (int i = 0; i < config.density; i++)
         {
@@ -88,37 +68,69 @@ public class TreeSpawner : MonoBehaviour
 
             spawnPosition.y = GetTerrainHeight(spawnPosition);
 
-            GameObject newTree = Instantiate(treePrefab, spawnPosition, Quaternion.identity);
-            for (int j = 0; j < newTree.transform.childCount; j++)
-            {
-                GameObject treeModel = newTree.transform.GetChild(j).gameObject;
+            GameObject newTree = Instantiate(treeParent, spawnPosition, Quaternion.identity);
 
-                // Add the TreeCuller component to each tree model
-                TreeCuller treeCuller = treeModel.AddComponent<TreeCuller>();
+            // Add the TreeCuller component to each tree model
+            // Iterate through the children of newTree to add the TreeCuller component
+            foreach (Transform child in newTree.transform)
+            {
+                TreeCuller treeCuller = child.gameObject.AddComponent<TreeCuller>();
                 treeCuller.Initialize(Camera.main.transform, config.cullingDistance);
             }
 
-            newTree.AddComponent<TreeCuller>().Initialize(Camera.main.transform, config.cullingDistance);
             float randomYRotation = Random.Range(0, config.maxYRotation);
             newTree.transform.Rotate(0, randomYRotation, 0);
 
             float randomScale = Random.Range(config.minScale, config.maxScale);
             newTree.transform.localScale = new Vector3(randomScale, randomScale, randomScale);
 
-            // Make newTree a child of this spawner for easy cleanup
-            newTree.transform.parent = transform;
-            newTree.SetActive(false); // Initially set to inactive
+            if (isPreMining)
+            {
+                newTree.transform.parent = preMiningTreeParent.transform;
+            }
+            else
+            {
+                newTree.transform.parent = miningTreeParent.transform;
+            }
+
             treePool.Add(newTree);
         }
+        Debug.Log("trePool.Count: " + treePool.Count);
     }
-    
 
     public void SpawnTrees()
     {
-        if(preMiningTrees.Count == 0 && miningTrees.Count == 0)
+        if (preMiningTrees.Count == 0 && miningTrees.Count == 0)
         {
-          treePrefabReferences.LoadAssetAsync<GameObject>().Completed += OnTreePrefabLoaded;
+            StartCoroutine(LoadTreePrefabs());
         }
+    }
+
+    private IEnumerator LoadTreePrefabs()
+    {
+        List<AsyncOperationHandle<GameObject>> loadOperations = new List<AsyncOperationHandle<GameObject>>();
+
+        foreach (var reference in treesReferences)
+        {
+            var handle = reference.LoadAssetAsync<GameObject>();
+            loadOperations.Add(handle);
+        }
+
+        foreach (var handle in loadOperations)
+        {
+            yield return handle;
+
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                treePrefabs.Add(handle.Result);
+            }
+            else
+            {
+                Debug.LogError("Failed to load tree prefab.");
+            }
+        }
+
+        OnTreePrefabsLoaded();
     }
 
     float GetTerrainHeight(Vector3 position)
@@ -129,11 +141,9 @@ public class TreeSpawner : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
-           // Debug.Log("hit the terrian y:" + hit.point.y);
             return hit.point.y;
-            
         }
-        return position.y; // Default if terrain height isn�t found
-    }
 
+        return position.y; // Default if terrain height isn’t found
+    }
 }

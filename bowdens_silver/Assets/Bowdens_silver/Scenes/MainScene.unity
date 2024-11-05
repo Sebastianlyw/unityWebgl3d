@@ -231,8 +231,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2036b3fdcf23e408fbeef02a351ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treePrefabReferences:
-    m_AssetGUID: 2703d2cc9082ba946816893085ae571f
+  treesReferences:
+  - m_AssetGUID: c06c8f37cc451d546ad5cd37a31bf82e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 776be619cb98d9646a27a77c2e7c8a6a
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 14ea7071592c6f64dafbdb398cc30acd
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
@@ -240,9 +248,6 @@ MonoBehaviour:
   mining_config: {fileID: 11400000, guid: 00aeed27eccc7064480df5c05f83398b, type: 2}
   globalConfig: {fileID: 11400000, guid: b52c0be7b8d6f714797663150700f8be, type: 2}
   sceneCenter: {x: 616, y: 0, z: -244}
-  terrainMesh: {fileID: 8096268668172558023, guid: 2854104e54564e14eb5f2520f0167494,
-    type: 3}
-  terrainMeshOuter: {fileID: 0}
 --- !u!4 &932956304
 Transform:
   m_ObjectHideFlags: 0
@@ -549,11 +554,11 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   miningModelReferences:
-  - m_AssetGUID: d16a963f8e757674cbe836d951de6913
+  - m_AssetGUID: f2e6b5e2fe1ad90449f0dbafa8c40fd3
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  - m_AssetGUID: f2e6b5e2fe1ad90449f0dbafa8c40fd3
+  - m_AssetGUID: d16a963f8e757674cbe836d951de6913
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
