@@ -1,8 +1,20 @@
 ## **Unity Developer Technical Interview Task Submission**
 
 
+##### new Update on 5/11/2024 #####
+ 
+ I have Implemented a **vegetation management system** that loads/unloads environmental assets based on camera position and mining stage. 
+ - Load tree in to object pool. 
+ - Make different configs (density, radius, culling distance, scale range) for different stagings. 
+ - Dynamic changes the rendering base on stage and camera culling result. 
+ 
+
+ **Noted**:
+
+ The github page server stopped working after I updated the vegetation changes and did some assert bundle optimization,I spent hours trying to fix it. But as I am not permitted to setup github's server config, So I use ngrok as a temporary solution for you to review what I have done. It will take longer to load the scene. And click Visit 1st time you click the ngrok link. 
+
 ### ** Instruction**
-  The task is hosted at **[Github Page](https://sebastianlyw.github.io/unityWebgl3d/)**
+  The task is hosted at **[Github Page](https://sebastianlyw.github.io/unityWebgl3d/)**  --> [ngrok](https://043f-49-226-55-24.ngrok-free.app/)
    - Click the flashing play button at the center of screen to load the 1st scene. 
    - 1st scene will play a video and show a screenshot of mining site on top right. 
    - User can click the Point of interest Pin on the site to enter the second scene(Stage Visualization). 
@@ -63,8 +75,6 @@ As I am currently employed full-time at my company, I began working on this task
    - Use Unity Shader Graph to dynamically generate **water**, **sky**, **wind** and more.  
 ---
 
-   **Submission folder**
-   -Submission.md
-   -webglbuild.zip
+
 
 
