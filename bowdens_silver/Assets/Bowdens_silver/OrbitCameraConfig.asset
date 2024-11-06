@@ -19,5 +19,5 @@ MonoBehaviour:
   zoomSpeed: 500
   minZoom: 5
   maxZoom: 5000
-  minYAngle: 15
+  minYAngle: 5
   maxYAngle: 90
