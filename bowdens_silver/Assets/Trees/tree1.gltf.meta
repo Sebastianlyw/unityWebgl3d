@@ -29,7 +29,7 @@ ScriptedImporter:
   _animationLoopTime: 1
   _animationLoopPose: 0
   _importMaterials: 1
-  _enableGpuInstancing: 1
+  _enableGpuInstancing: 0
   _texturesReadWriteEnabled: 1
   _generateMipMaps: 1
   _useSceneNameIdentifier: 1
@@ -42,9 +42,9 @@ ScriptedImporter:
 '
   optimizeGameObjects: 0
   materials:
-  - {fileID: -6462473865385380247, guid: c06c8f37cc451d546ad5cd37a31bf82e, type: 3}
-  - {fileID: -6370071095652225243, guid: c06c8f37cc451d546ad5cd37a31bf82e, type: 3}
-  - {fileID: -5690145428935510253, guid: c06c8f37cc451d546ad5cd37a31bf82e, type: 3}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
   textures:
   - {fileID: 2800000, guid: 6867d9f624a624742a01124afed5118b, type: 3}
   - {fileID: 2800000, guid: 137575a024b29d64d994064b287c22fd, type: 3}
