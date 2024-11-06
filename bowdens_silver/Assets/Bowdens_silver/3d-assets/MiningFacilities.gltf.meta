@@ -29,7 +29,7 @@ ScriptedImporter:
   _animationLoopTime: 1
   _animationLoopPose: 0
   _importMaterials: 1
-  _enableGpuInstancing: 1
+  _enableGpuInstancing: 0
   _texturesReadWriteEnabled: 1
   _generateMipMaps: 1
   _useSceneNameIdentifier: 1
@@ -41,31 +41,31 @@ ScriptedImporter:
 '
   optimizeGameObjects: 0
   materials:
-  - {fileID: -8330516452353554759, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 2486822938632806306, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -6519547306111692853, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -3693842705204568953, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -2395442194333413514, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 4404839247605695133, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -8103265613940881770, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -4211219637863545637, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -710910164944623929, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 5774983223877453510, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -2557039924376705153, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -978160288850237216, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -1536519034987021355, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -8102992572428374381, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -7791509382621007313, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -5396234901987582864, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 5509835813249982073, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 9137004007447484613, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 6859942874745555409, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 5048754651544152608, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 9193714387509385892, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 8556262120643298411, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 863152334991267191, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: -1444460858095362738, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
-  - {fileID: 3239012967624047449, guid: fa615676647021b4bbdc7682950c55d8, type: 3}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
+  - {instanceID: 0}
   textures:
   - {fileID: -7955813606655290988, guid: 6d69495beac73ad48815bc786943b075, type: 3}
   - {fileID: -7955813606655290988, guid: 5cb10993a0f249d4e804008bf1cf30e2, type: 3}
@@ -137,32 +137,4 @@ ScriptedImporter:
     shouldBeLinear: 0
     shouldBeNormalMap: 0
   _mainAssetIdentifier: scenes/Scene
-  _importPlugins:
-  - typeName: UnityGLTF.Plugins.LightsPunctualImport
-    overrideEnabled: 0
-    enabled: 0
-    jsonSettings: 
-  - typeName: UnityGLTF.Plugins.MaterialExtensionsImport
-    overrideEnabled: 0
-    enabled: 0
-    jsonSettings: 
-  - typeName: UnityGLTF.Plugins.DracoImport
-    overrideEnabled: 0
-    enabled: 1
-    jsonSettings: 
-  - typeName: UnityGLTF.Plugins.Ktx2Import
-    overrideEnabled: 0
-    enabled: 1
-    jsonSettings: 
-  - typeName: UnityGLTF.Plugins.GPUInstancingImport
-    overrideEnabled: 0
-    enabled: 1
-    jsonSettings: 
-  - typeName: UnityGLTF.Plugins.LodsImport
-    overrideEnabled: 0
-    enabled: 0
-    jsonSettings: 
-  - typeName: UnityGLTF.Plugins.AnimationPointerImport
-    overrideEnabled: 0
-    enabled: 0
-    jsonSettings: 
+  _importPlugins: []

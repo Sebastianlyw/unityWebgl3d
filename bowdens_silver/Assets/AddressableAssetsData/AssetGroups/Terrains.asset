@@ -22,13 +22,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2854104e54564e14eb5f2520f0167494
-    m_Address: Assets/Bowdens_silver/3d-assets/TerrainYear16.gltf
+  - m_GUID: b7d25f1da7471e844949ce793e982464
+    m_Address: Assets/Bowdens_silver/3d-assets/TerrainExisting.gltf
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b7d25f1da7471e844949ce793e982464
-    m_Address: Assets/Bowdens_silver/3d-assets/TerrainExisting.gltf
+  - m_GUID: 2854104e54564e14eb5f2520f0167494
+    m_Address: Assets/Bowdens_silver/3d-assets/TerrainYear16.gltf
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
