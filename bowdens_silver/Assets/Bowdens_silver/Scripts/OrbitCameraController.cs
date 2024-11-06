@@ -69,9 +69,9 @@ public class OrbitalCameraController : MonoBehaviour
             Vector3 panDirection = cam.transform.right * panX + cam.transform.up * panY;
             cameraPivot.position += panDirection;
            
-            if (cameraPivot.position.y < 300)
+            if (cameraPivot.position.y < config.minYPanning)
             {
-                cameraPivot.position = new Vector3(cameraPivot.position.x, 300, cameraPivot.position.z);
+                cameraPivot.position = new Vector3(cameraPivot.position.x, config.minYPanning, cameraPivot.position.z);
             }
         }
     }

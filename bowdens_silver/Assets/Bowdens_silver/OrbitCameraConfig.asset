@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OrbitCameraConfig
   m_EditorClassIdentifier: 
   panSpeed: 100
-  distance: 1228.6711
+  distance: 1128.6711
   xSpeed: 120
   ySpeed: 120
   zoomSpeed: 500
@@ -21,3 +21,4 @@ MonoBehaviour:
   maxZoom: 5000
   minYAngle: 5
   maxYAngle: 90
+  minYPanning: 700

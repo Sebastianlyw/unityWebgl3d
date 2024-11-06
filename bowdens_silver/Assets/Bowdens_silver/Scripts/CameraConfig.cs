@@ -12,4 +12,5 @@ public class OrbitCameraConfig : ScriptableObject
     public float maxZoom = 5000.0f;
     public float minYAngle = 10.0f;
     public float maxYAngle = 90.0f;
+    public float minYPanning = 500.0f;
 }
