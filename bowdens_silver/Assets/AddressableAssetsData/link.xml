@@ -5,7 +5,6 @@
     <type fullname="DelayedVideoPlayer" preserve="all" />
     <type fullname="MenuManager" preserve="all" />
     <type fullname="OrbitCameraConfig" preserve="all" />
-    <type fullname="SimpleWave" preserve="all" />
     <type fullname="StatsDisplay" preserve="all" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">

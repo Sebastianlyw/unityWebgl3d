@@ -17,11 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: f293a11c53a8a824b973eb901cb45d22
   m_SerializeEntries:
-  - m_GUID: 004ff0b2a40f9434fa4991c03ee29d4c
-    m_Address: Assets/Bowdens_silver/Prefabs/WaterPlane.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 880062f4d67a3d94ea7e623961d2880a
     m_Address: Assets/Bowdens_silver/Prefabs/TerrainExisting.prefab
     m_ReadOnly: 0
