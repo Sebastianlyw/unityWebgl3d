@@ -4,4 +4,5 @@ using UnityEngine;
 public class GlobalConfig : ScriptableObject
 {
     public bool isPreMining = true;
+    public bool isDay = true;
 }

@@ -96,7 +96,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _CloudDistanceFadePower: 1
+    - _CloudDistanceFadePower: 1.1
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -136,11 +136,11 @@ Material:
     - _CloudScale: {r: 0.6, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HorizonColor: {r: 0.6539694, g: 0.76015645, b: 0.8301887, a: 0}
+    - _HorizonColor: {r: 0.6, g: 0.81960785, b: 0.9137255, a: 0}
     - _NadirColor: {r: 0.12936096, g: 0.15274063, b: 0.5377358, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _ZenithColor: {r: 0.09927912, g: 0.49884516, b: 0.9150943, a: 0}
+    - _ZenithColor: {r: 0.29411766, g: 0.57254905, b: 0.85882354, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2575112954686403482
 MonoBehaviour:

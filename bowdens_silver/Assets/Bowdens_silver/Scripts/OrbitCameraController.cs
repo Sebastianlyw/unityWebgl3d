@@ -5,6 +5,7 @@ public class OrbitalCameraController : MonoBehaviour
 {
     public Transform cameraPivot;
     public OrbitCameraConfig config;
+    public RectTransform northPointImage; 
     private float x = 0.0f;
     private float y = 0.0f;
 
@@ -37,6 +38,7 @@ public class OrbitalCameraController : MonoBehaviour
     {
         HandleMouseInput();
         HandleZoom();
+        UpdateNorthPointImage();
     }
 
     private void HandleMouseInput()
@@ -87,5 +89,14 @@ public class OrbitalCameraController : MonoBehaviour
         // Update camera position based on distance
         Vector3 direction = cam.transform.position - cameraPivot.position;
         cam.transform.position = cameraPivot.position + direction.normalized * config.distance;
+    }
+
+    private void UpdateNorthPointImage()
+    {
+        if (northPointImage != null)
+        {
+            float angle = cam.transform.eulerAngles.y;
+            northPointImage.localRotation = Quaternion.Euler(0, 0,angle);
+        }
     }
 }
